@@ -17,5 +17,6 @@ workflows:
           browser: chrome
           post-steps:
             - run: ls
-            - store_test_results: true
+            - store_test_results:
+                path: cypress/reports/
             - store_artifacts: true
