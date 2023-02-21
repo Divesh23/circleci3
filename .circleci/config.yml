@@ -13,9 +13,8 @@ workflows:
       - cypress/run:
           requires:
             - cypress/install
+          store_artifacts: true
           executor: with-chrome
           browser: chrome
           post-steps:
             - run: ls
-            - store_artifacts:
-                path: mochawesome-report
