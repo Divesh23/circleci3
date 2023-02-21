@@ -19,4 +19,4 @@ workflows:
           post-steps:
             - run: ls
             - store_test_results:
-                path: /root/project/cypress/reports/html/
+                path: cypress/reports
