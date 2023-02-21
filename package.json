@@ -1,17 +1,8 @@
 {
-  "name": "cypress-circleci",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "dev": "webpack --config=Scripts/config/webpack.dev.js --watch",
-    "build": "webpack --config=Scripts/config/webpack.prod.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "cypress": "^12.5.1",
-    "graphql": "^16.6.0"
-  }
+    "dependencies": {
+        "cypress": "^12.6.0"
+    },
+    "devDependencies": {
+        "cypress-mochawesome-reporter": "^3.3.0"
+    }
 }
