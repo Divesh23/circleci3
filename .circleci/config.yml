@@ -17,7 +17,5 @@ workflows:
           browser: chrome
           post-steps:
             - run: ls
-            - store_test_results:
-                path: /root/project/cypress/reports/html/index.html
             - store_artifacts:
-                path: cypress/screenshots
+                path: mochawesome-report
