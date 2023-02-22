@@ -21,4 +21,4 @@ workflows:
             - run: cd cypress
             - run: ls
             - store_test_results:
-                path: cypress/reports
+                path: cypress/results

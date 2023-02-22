@@ -1,19 +1,16 @@
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
-    reporter: 'cypress-mochawesome-reporter',
-    reporterOptions: {
-        charts: true,
-        reportPageTitle: 'divesh',
-        embeddedScreenshots: true,
-        inlineAssets: true,
-        saveAllAttempts: false,
+    "reporter": "junit",
+    "reporterOptions": {
+        "mochaFile": "cypress/results/results-[hash].xml",
+        "toConsole": true
     },
     e2e: {
         "baseUrl": "https://google.com/",
         setupNodeEvents(on, config) {
             // implement node event listeners here
-            require('cypress-mochawesome-reporter/plugin')(on);
+            //require('cypress-mochawesome-reporter/plugin')(on);
         },
     },
 });
